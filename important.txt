@@ -1,0 +1,49 @@
+// TODO
+[x] Need to fix power module, energy reporting zero. #imp
+[x] Need to fix the OTA. Check how exacty is the function working and where is it getting stuck.
+[] MQTT connection provisions - (userid, password, config settings)
+[] Need to implement a config MQTT topic. For future settings.
+[x] Need to check the RELAY in energy meters. Why exactly is it not working.
+[x] Implementation of debug logs
+[x] Need to fix MQTT
+[] Write a dynamic code for mqtt topic creation
+[] version, entity name and config data sending at boot time
+[] send rssi as well
+
+// Future improvements
+-----------------------
+// Server reports-
+[] Provision to calibrate energy metering devices.
+[] Data encryption.
+[] No need to send data very frequently. Send when the server asks.
+[] Implementation of ping.
+[] Reporting of following - 
+    [] WiFi Credential 
+    [] App Version 
+    [] Crash Report 
+    [] Restart Reason
+    [] Wakeup time
+
+
+// Adding Features To Framework
+--------------------------------
+[] EEPROM RESET - TOGGLE SWITCH, LONG PRESS, TOGGLE POWER
+[] NTP Support
+[] System stability check
+[] File system Support -> LittleFS
+[] Button Support
+[] Sensor Support - Temperature, IR, Lux, Gas
+[] Communication Interfaces (all)
+[] LEDs Support
+    [] WiFi Status
+    [] Power Status
+    [] Multiple LEDs
+    [] Neo-pixel
+[] UDP Support
+[] MDNS Server Support
+
+
+//Important Notes
+------------------
+* Do not use Serial prints anywhere in the code unneccesarily for debugging. Use DEBUG_PRINT() for debug logs.
+* Do not use delay() or yeid() anywhere in the loop or callbacks.

@@ -1,0 +1,2 @@
+#define APP_VERSION  "1"
+#define APP_NAME      "BHARAT_SERVICES_FIRMWARE"

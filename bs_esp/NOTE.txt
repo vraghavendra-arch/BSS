@@ -1,0 +1,22 @@
+### DO NOT USE delay() OR yield() IN ANY POINT OF THE CODE UNTILL IT REQUIRES ###
+
+# Update Check Interval
+- The update check interval is set to 3 minutes (180000 milliseconds). This interval is used to check for updates to the firmware. The check is performed in the httpLoop() function.
+- The check is performed by sending a GET request to the update server. The response is then parsed to check for the presence of a new version. If a new version is found, the updateState is set to CHECKING.
+- The check is not performed continuously becuase the GET() function is blocking the code.
+
+# APP version
+- We will use the version.h file to store the version of the firmware.
+- We will not use EEPROM to store the version.
+- The firmware version will be hardcoded in the version.h file.
+- Reason: If the device somehow looses the version in eeprom, it will again try to update the firmware.
+
+
+# Update check state machine
+- The update check state machine is used to check for updates to the firmware.
+- The state machine is used to avoid blocking the code.
+- The state machine is used to check for updates in a non-blocking manner.
+- The state machine is used to check for updates in a stateful manner.
+- The state machine is used to check for updates in a stateful manner.
+
+

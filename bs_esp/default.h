@@ -1,0 +1,312 @@
+#ifndef AUTO_SAVE
+#define AUTO_SAVE  0
+#endif
+
+#ifndef RELAY1_INVERSE
+#define RELAY1_INVERSE 0
+#endif
+
+#ifndef RELAY2_INVERSE
+#define RELAY2_INVERSE 0
+#endif
+
+#ifndef RELAY3_INVERSE
+#define RELAY3_INVERSE 0
+#endif
+
+#ifndef RELAY4_INVERSE
+#define RELAY4_INVERSE 0
+#endif
+
+#ifndef RELAY5_INVERSE
+#define RELAY5_INVERSE 0
+#endif
+
+#ifndef RELAY6_INVERSE
+#define RELAY6_INVERSE 0
+#endif
+
+#ifndef RELAY7_INVERSE
+#define RELAY7_INVERSE 0
+#endif
+
+#ifndef RELAY8_INVERSE
+#define RELAY8_INVERSE 0
+#endif
+
+#ifndef RELAY9_INVERSE
+#define RELAY9_INVERSE 0
+#endif
+
+#ifndef RELAY10_INVERSE
+#define RELAY10_INVERSE 0
+#endif
+
+#ifndef RELAY1_PIN
+#define RELAY1_PIN  99
+#endif
+
+#ifndef RELAY2_PIN
+#define RELAY2_PIN  99
+#endif
+
+#ifndef RELAY3_PIN
+#define RELAY3_PIN  99
+#endif
+
+#ifndef RELAY4_PIN
+#define RELAY4_PIN  99
+#endif
+
+#ifndef RELAY5_PIN
+#define RELAY5_PIN  99
+#endif
+
+#ifndef RELAY6_PIN
+#define RELAY6_PIN  99
+#endif
+
+#ifndef RELAY7_PIN
+#define RELAY7_PIN  99
+#endif
+
+#ifndef RELAY8_PIN
+#define RELAY8_PIN  99
+#endif
+
+#ifndef RELAY9_PIN
+#define RELAY9_PIN  99
+#endif
+
+#ifndef RELAY10_PIN
+#define RELAY10_PIN  99
+#endif
+
+#ifndef DIMMER_NUM
+#define DIMMER_NUM  0
+#endif
+
+#ifndef DIMMER1_PIN
+#define DIMMER1_PIN  99
+#endif
+
+
+#ifndef HEARTBEAT_INTERVAL
+#define HEARTBEAT_INTERVAL 12000
+#endif
+
+#ifndef ACTUAL_LOAD1_PIN
+#define ACTUAL_LOAD1_PIN  0
+#endif
+
+#ifndef SERIAL_BAUDRATE
+#define SERIAL_BAUDRATE   115200
+#endif
+
+#ifndef RELAY_PROVIDER
+#define RELAY_PROVIDER REPLAY_PROVIDER_ESP
+#endif
+
+#ifndef BUTTON1_MODE
+#define BUTTON1_MODE   0
+#endif
+
+#ifndef INITIAL_DELAY
+#define INITIAL_DELAY 2000
+#endif
+
+#ifndef POWER_PROVIDER
+#define POWER_PROVIDER  POWER_PROVIDER_NONE
+#endif
+
+#ifndef PHASE_COUNT
+#define PHASE_COUNT  1
+#endif
+
+#ifndef LIGHT_PROVIDER
+#define LIGHT_PROVIDER LIGHT_PROVIDER_NONE
+#endif
+
+#ifndef LIGHT_HAS_COLOUR
+#define LIGHT_HAS_COLOUR 0
+#endif
+
+#ifndef LIGHT_HAS_KELVIN
+#define LIGHT_HAS_KELVIN 0
+#endif
+
+#ifndef LIGHT_PWM_PIN
+#define LIGHT_PWM_PIN 99
+#endif
+
+#ifndef LIGHT_WS2812_PIN
+#define LIGHT_WS2812_PIN 99
+#endif
+
+#ifndef TOUCH_PANEL_SERIAL_COMMANDS
+#define TOUCH_PANEL_SERIAL_COMMANDS  0
+#endif
+
+#ifndef DEVICE_TYPE
+#define ENTITY_TYPE "em3p"
+// #define DEVICE_TYPE DEVICE_TYPE_OTHERS   //need to change latter
+#endif
+
+#ifndef ELEGANT_OTA_SUPPORT
+#define ELEGANT_OTA_SUPPORT  0
+#endif
+
+#ifndef LED_PROVIDER
+#define LED_PROVIDER  LED_PROVIDER_NONE
+#endif
+
+#ifndef ENABLE_EEPROM_RESET
+#define ENABLE_EEPROM_RESET  0
+#endif
+
+#ifndef ENABLE_PING_MSG_TO_SERVER
+#define ENABLE_PING_MSG_TO_SERVER  1
+#endif
+
+
+//button
+#ifndef BUTTON_DBL_CLICK_COUNT
+#define BUTTON_DBL_CLICK_COUNT 2
+#endif
+
+#ifndef BUTTON_TRIPLE_CLICK_COUNT
+#define BUTTON_TRIPLE_CLICK_COUNT 0
+#endif
+
+#ifndef BUTTON1_PRESS
+#define BUTTON1_PRESS BUTTON_MODE_NONE
+#endif
+#ifndef BUTTON2_PRESS
+#define BUTTON2_PRESS BUTTON_MODE_NONE
+#endif
+#ifndef BUTTON3_PRESS
+#define BUTTON3_PRESS BUTTON_MODE_NONE
+#endif
+#ifndef BUTTON4_PRESS
+#define BUTTON4_PRESS BUTTON_MODE_NONE
+#endif
+#ifndef BUTTON5_PRESS
+#define BUTTON5_PRESS BUTTON_MODE_NONE
+#endif
+
+#ifndef BUTTON1_CLICK
+#define BUTTON1_CLICK BUTTON_MODE_TOGGLE
+#endif
+#ifndef BUTTON2_CLICK
+#define BUTTON2_CLICK BUTTON_MODE_TOGGLE
+#endif
+#ifndef BUTTON3_CLICK
+#define BUTTON3_CLICK BUTTON_MODE_TOGGLE
+#endif
+#ifndef BUTTON4_CLICK
+#define BUTTON4_CLICK BUTTON_MODE_TOGGLE
+#endif
+
+#ifndef BUTTON1_DBLCLICK
+#define BUTTON1_DBLCLICK BUTTON_MODE_AP
+#endif
+#ifndef BUTTON2_DBLCLICK
+#define BUTTON2_DBLCLICK BUTTON_MODE_NONE
+#endif
+#ifndef BUTTON3_DBLCLICK
+#define BUTTON3_DBLCLICK BUTTON_MODE_NONE
+#endif
+#ifndef BUTTON4_DBLCLICK
+#define BUTTON4_DBLCLICK BUTTON_MODE_NONE
+#endif
+
+#ifndef BUTTON1_LNGCLICK
+#define BUTTON1_LNGCLICK BUTTON_MODE_RESET
+#endif
+#ifndef BUTTON2_LNGCLICK
+#define BUTTON2_LNGCLICK BUTTON_MODE_NONE
+#endif
+#ifndef BUTTON3_LNGCLICK
+#define BUTTON3_LNGCLICK BUTTON_MODE_NONE
+#endif
+#ifndef BUTTON4_LNGCLICK
+#define BUTTON4_LNGCLICK BUTTON_MODE_NONE
+#endif
+
+#ifndef BUTTON1_LNGLNGCLICK
+#define BUTTON1_LNGLNGCLICK BUTTON_MODE_FACTORY
+#endif
+#ifndef BUTTON2_LNGLNGCLICK
+#define BUTTON2_LNGLNGCLICK BUTTON_MODE_NONE
+#endif
+#ifndef BUTTON3_LNGLNGCLICK
+#define BUTTON3_LNGLNGCLICK BUTTON_MODE_NONE
+#endif
+#ifndef BUTTON4_LNGLNGCLICK
+#define BUTTON4_LNGLNGCLICK BUTTON_MODE_NONE
+#endif
+
+#ifndef BUTTON1_RELAY
+#define BUTTON1_RELAY 0
+#endif
+#ifndef BUTTON2_RELAY
+#define BUTTON2_RELAY 0
+#endif
+#ifndef BUTTON3_RELAY
+#define BUTTON3_RELAY 0
+#endif
+#ifndef BUTTON4_RELAY
+#define BUTTON4_RELAY 0
+#endif
+#ifndef BUTTON5_RELAY
+#define BUTTON5_RELAY 0
+#endif
+
+
+#ifndef USE_UART_PINS_AS_GPIO
+#define USE_UART_PINS_AS_GPIO 0
+#endif
+
+#ifndef NEOPIXEL_LED1_INDEX
+#define NEOPIXEL_LED1_INDEX 0
+#endif
+
+#ifndef NEOPIXEL_LED2_INDEX
+#define NEOPIXEL_LED2_INDEX 1
+#endif
+
+#ifndef NEOPIXEL_LED3_INDEX
+#define NEOPIXEL_LED3_INDEX 2
+#endif
+
+#ifndef NEOPIXEL_LED4_INDEX
+#define NEOPIXEL_LED4_INDEX 3
+#endif
+
+#ifndef NEOPIXEL_LED5_INDEX
+#define NEOPIXEL_LED5_INDEX 4
+#endif
+
+#ifndef NUMPIXELS_COUNT
+#define NUMPIXELS_COUNT 0  // Number of LEDs
+#endif
+
+#ifndef DIMPOS1_ON_STATE
+#define DIMPOS1_ON_STATE 1
+#endif
+
+#ifndef DIMPOS2_ON_STATE
+#define DIMPOS2_ON_STATE 1
+#endif
+
+#ifndef DIMPOS3_ON_STATE
+#define DIMPOS3_ON_STATE 1
+#endif
+
+#ifndef DIMPOS4_ON_STATE
+#define DIMPOS4_ON_STATE 1
+#endif
+
+#ifndef DIMMER_PROVIDER
+#define DIMMER_PROVIDER DIMMER_PROVIDER_NONE
+#endif
